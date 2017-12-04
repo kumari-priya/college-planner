@@ -1,1 +1,1 @@
-# college-planner
+# College-Planner

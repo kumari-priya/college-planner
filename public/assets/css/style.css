@@ -1,0 +1,193 @@
+/* Sticky Footer Formatting */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+.footer {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: small;
+  background-color: #f5f5f5;
+}
+
+/* Nav Bar Formatting */
+.navbar {
+  background-color: #f5f5f5;
+  align-content: center;
+}
+
+/* Style for the logo int he nav bar header */
+#logo {
+  height: 75px;
+  width: 200px;
+}
+
+/* Style for login, register links below nav bar */
+#login-btns {
+  float: right;
+}
+ 
+#failed {
+  color: red;
+}
+
+/* Style for carousel on homepage*/
+.carousel-content {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+  left: 35%;
+  z-index: 20;
+  background-color: #282828;
+  opacity: 0.75;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+/* Style for contact page */
+
+#contact_form {
+  background-image: url("../images/contact_image.jpg") !important;
+}
+
+
+/*.largerWidth {
+  width: 100% !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+*/
+/* Styling for User Profile page */
+.testimonial {
+  background-color: #E0D8E1;
+}
+
+#user, #todo {
+  border-left: 5px groove lightgray;
+  height: 800px;
+  border-radius: 15px 50px;
+  background-color: #f5f5f5;
+}
+
+#user > h4,
+#todo > h4 {
+  color: gray;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style for testimonials page */
+.demo {  
+  background: #d4ccc4; }
+
+.testimonial{
+    padding-left: 150px;
+    margin: 50px 0;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 23%;
+    float: left;
+    margin-right: 5%;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial .testimonial-content{
+    display: inline-block;
+    width: 72%;
+    padding-top: 25px;
+}
+.testimonial-content .title{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 900;
+    color: #231f20;
+    padding-right: 10px;
+    margin: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 18px;
+    color: #b37ab4;
+}
+.testimonial .description{
+    font-size: 18px;
+    font-style: italic;
+    color: #982d3d;
+    margin-top: 25px;
+}
+.owl-theme .owl-controls{
+    position: absolute;
+    top: 27%;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0 0 5px 0;
+    opacity: 1;
+    position: relative;
+}
+.owl-prev:before,
+.owl-next:before{
+    content: "\f104";
+    font-family: "fontawesome";
+    font-size: 60px;
+    color: #f7de44;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+.owl-next:before{
+    content: "\f105";
+}
+@media only screen and (max-width:1280px){
+    .testimonial{ padding-left: 80px; }
+}
+@media only screen and (max-width:767px){
+    .testimonial{
+        text-align: center;
+        padding-left: 0;
+        margin: 0 15px;
+    }
+    .testimonial .pic{
+        width: 100px;
+        height: 100px;
+        float: none;
+        margin-right: 0;
+    }
+    .testimonial .testimonial-content{
+        width: 100%;
+    }
+    .owl-theme .owl-controls,
+    .owl-prev:before,
+    .owl-next:before{
+        position: static;
+    }
+    .owl-theme .owl-controls .owl-buttons div{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
